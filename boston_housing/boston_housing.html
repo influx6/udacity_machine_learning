@@ -13464,7 +13464,7 @@ Think about the pros and cons of adding more training points based on if the tra
 <p><strong>Answer: </strong></p>
 <ul>
 <li>The first graph has a max_dept of 1</li>
-<li>The score of the training curve increased dramatically, and then seemed to plateau or degrade a little</li>
+<li>The score of the training curve decreased dramatically, and then seemed to plateau or degrade a little</li>
 <li>More training points would simply result in stagnation or evening worsening og the curve, as the graph begins to turn downwards.</li>
 </ul>
 
@@ -14012,7 +14012,7 @@ AElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> The grid search technique is a means of automating the selection of a model for a learning learning algorithm. Basically the f1 score of the different parameter combinations are plotted on a table (or grid), then the parameter combination with the best score is what is used as the model.  Grid search is important, because it removes the need for the machine learning implementer to manually try out different parameter possibilities or make random guesses, while choosing a model.</p>
+<p><strong>Answer: </strong> The grid search technique is a means of automating the selection of a model for a learning algorithm. Basically the f1 score of the different parameter combinations are plotted on a table (or grid), then the parameter combination with the best score is what is used as the model.  Grid search is important, because it removes the need for the machine learning implementer to manually try out different parameter possibilities or make random guesses, while choosing a model.</p>
 
 </div>
 </div>
@@ -14039,8 +14039,8 @@ AElFTkSuQmCC
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
 <ul>
-<li>In k fold cross validation training technique, the data set is broken into k partisions, and one of the parts is used as testing data while the rest is used as training data. And this process is repeated for k times, which is until all the partitions are used as both training and testing data. Then score becomes the average of all the training results. </li>
-<li>K fold cross validation is useful for frid search, as the training processes are usually run repeatedly for all parameter combinations. So it gives a more trusting f score result, while using all the data.</li>
+<li>In k fold cross validation training technique, the entire data set is broken into k partisions, and one of the parts is used as testing data while the rest is used as training data. And this process is repeated for k times, which is until all the partitions are used as both training and testing data. Then score becomes the average of all the training results. </li>
+<li>K fold cross validation is useful for grid search, as the training processes are usually run repeatedly for all parameter combinations. So it gives a more trusting f score result, while using all the data. Without k fold cross validation, it would be difficult on small data sets to perform grid search without having results biased to the particular data each model of the grid search was run on.</li>
 </ul>
 
 </div>
@@ -14274,7 +14274,7 @@ Predicted selling price for Client 3&#39;s home: $893,760.00
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> Clent 1, 2 and 3 should sell their houses at $409,350.00, $227,433.96 and $893,760.00 respectively.  These numbers seem reasonable, as client 3 having more rooms and a lower neighbourhood poverty level and low student to teacher ratio, has the higher house price, with the reverse being the case for client 1. THis is inline with the previously made predictions.</p>
+<p><strong>Answer: </strong> Clent 1, 2 and 3 should sell their houses at \$409,350.00, \$227,433.96 and \$893,760.00 respectively.  Client 1 and 2s houses seem reasonable when compared to the mean housing price of $454,342.94, with their deviation from the mean housing price falling around the standard deviation of $165,171, while client 3's home goes much farther from the mean housing price, with a price that doesnt lie close to the standard deviation.</p>
 
 </div>
 </div>
